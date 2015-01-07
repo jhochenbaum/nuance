@@ -1,0 +1,5 @@
+<TEST_PROTOCOL>
+    <DATA>
+        <ITEM ID="Potentiometer 1" start="p1"/>
+    </DATA>
+</TEST_PROTOCOL>

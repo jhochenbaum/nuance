@@ -1,0 +1,8 @@
+<TEST_PROTOCOL>
+    <DATA>
+        <ITEM ID="Potentiometer1" start="pot1start"/>
+        <ITEM ID="Potentiometer2" start="pot2start"/>
+        <ITEM ID="Gravity" start="gravityStart"/>
+        <ITEM ID="AccelX" start="accelXstart"/>
+    </DATA>
+</TEST_PROTOCOL>

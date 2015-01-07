@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="CDyvaAc" name="Nuance" projectType="guiapp" version="1.0.0"
+              juceLinkage="amalg_multi" buildVST="1" buildRTAS="0" buildAU="1"
+              pluginName="Juce Project" pluginDesc="Juce Project" pluginManufacturer="yourcompany"
+              pluginManufacturerCode="Manu" pluginCode="Plug" pluginChannelConfigs="{1, 1}, {2, 2}"
+              pluginIsSynth="0" pluginWantsMidiIn="0" pluginProducesMidiOut="0"
+              pluginSilenceInIsSilenceOut="0" pluginTailLength="0" pluginEditorRequiresKeys="0"
+              pluginAUExportPrefix="JuceProjectAU" pluginAUViewClass="JuceProjectAU_V1"
+              pluginRTASCategory="" bundleIdentifier="com.flipmu.Nuance" jucerVersion="3.1.0"
+              includeBinaryInAppConfig="1">
+  <EXPORTFORMATS>
+    <XCODE_MAC targetFolder="Builds/MacOSX" vstFolder="~/SDKs/vstsdk2.4" rtasFolder="~/SDKs/PT_80_SDK"
+               objCExtraSuffix="GtZzFi" bigIcon="FQSUql" smallIcon="FQSUql">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" isDebug="1" optimisation="1" targetName="Nuance"
+                       osxSDK="default" osxCompatibility="default" osxArchitecture="default"/>
+        <CONFIGURATION name="Release" isDebug="0" optimisation="2" targetName="Nuance"
+                       osxSDK="default" osxCompatibility="default" osxArchitecture="default"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_video" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_events" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_core" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../sdks/juce/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../sdks/juce/modules"/>
+      </MODULEPATHS>
+    </XCODE_MAC>
+  </EXPORTFORMATS>
+  <MAINGROUP id="kwwpreh" name="Nuance">
+    <GROUP id="osqPfI" name="data">
+      <FILE id="FQSUql" name="nuanceIcon.png" compile="0" resource="1" file="nuanceIcon.png"/>
+      <GROUP id="S625rI" name="Sounds">
+        <FILE id="FVdWIY" name="MetronomeHigh.wav" compile="0" resource="1"
+              file="data/Sounds/MetronomeHigh.wav"/>
+        <FILE id="WdKPw8" name="MetronomeLow.wav" compile="0" resource="1"
+              file="data/Sounds/MetronomeLow.wav"/>
+      </GROUP>
+    </GROUP>
+    <GROUP id="zTzhvTL" name="Source">
+      <GROUP id="KrAtt" name="serial">
+        <FILE id="sFfmIL" name="mac_SerialPort.cpp" compile="1" resource="0"
+              file="Source/serial/mac_SerialPort.cpp"/>
+        <FILE id="NQFTpU" name="mac_SerialPort.h" compile="0" resource="0"
+              file="Source/serial/mac_SerialPort.h"/>
+        <FILE id="MyuUxU" name="SerialPortOutputStream.h" compile="0" resource="0"
+              file="Source/serial/SerialPortOutputStream.h"/>
+        <FILE id="dmAv4l" name="SerialPortInputStream.h" compile="0" resource="0"
+              file="Source/serial/SerialPortInputStream.h"/>
+        <FILE id="eU6S7" name="SerialDeviceManager.cpp" compile="1" resource="0"
+              file="Source/serial/SerialDeviceManager.cpp"/>
+        <FILE id="vs7hKf" name="SerialDeviceManager.h" compile="0" resource="0"
+              file="Source/serial/SerialDeviceManager.h"/>
+        <FILE id="bbG2m" name="SerialPort.h" compile="0" resource="0" file="Source/serial/SerialPort.h"/>
+      </GROUP>
+      <GROUP id="OlG2Uqg" name="osc">
+        <FILE id="x9WheN" name="MessageMappingOscPacketListener.h" compile="0"
+              resource="0" file="Source/osc/MessageMappingOscPacketListener.h"/>
+        <FILE id="ebMaiN" name="OscException.h" compile="0" resource="0" file="Source/osc/OscException.h"/>
+        <FILE id="ZJ5SyI" name="OscHostEndianness.h" compile="0" resource="0"
+              file="Source/osc/OscHostEndianness.h"/>
+        <FILE id="IrrK8J" name="OscOutboundPacketStream.cpp" compile="1" resource="0"
+              file="Source/osc/OscOutboundPacketStream.cpp"/>
+        <FILE id="bFEWJL" name="OscOutboundPacketStream.h" compile="0" resource="0"
+              file="Source/osc/OscOutboundPacketStream.h"/>
+        <FILE id="f0lW2p" name="OscPacketListener.h" compile="0" resource="0"
+              file="Source/osc/OscPacketListener.h"/>
+        <FILE id="J2uRWL" name="OscPrintReceivedElements.cpp" compile="1" resource="0"
+              file="Source/osc/OscPrintReceivedElements.cpp"/>
+        <FILE id="N5ngD2" name="OscPrintReceivedElements.h" compile="0" resource="0"
+              file="Source/osc/OscPrintReceivedElements.h"/>
+        <FILE id="BQ5eWs" name="OscReceivedElements.cpp" compile="1" resource="0"
+              file="Source/osc/OscReceivedElements.cpp"/>
+        <FILE id="qJPlHC" name="OscReceivedElements.h" compile="0" resource="0"
+              file="Source/osc/OscReceivedElements.h"/>
+        <FILE id="K3tsbg" name="OscTypes.cpp" compile="1" resource="0" file="Source/osc/OscTypes.cpp"/>
+        <FILE id="NbeK03" name="OscTypes.h" compile="0" resource="0" file="Source/osc/OscTypes.h"/>
+      </GROUP>
+      <GROUP id="ZLYnOem" name="ip">
+        <FILE id="Wvq3NG" name="IpEndpointName.cpp" compile="1" resource="0"
+              file="Source/ip/IpEndpointName.cpp"/>
+        <FILE id="vOnSjO" name="IpEndpointName.h" compile="0" resource="0"
+              file="Source/ip/IpEndpointName.h"/>
+        <FILE id="T5bQvT" name="NetworkingUtils.h" compile="0" resource="0"
+              file="Source/ip/NetworkingUtils.h"/>
+        <FILE id="WGxT5L" name="PacketListener.h" compile="0" resource="0"
+              file="Source/ip/PacketListener.h"/>
+        <GROUP id="{9D71E8C8-DF60-9CD0-C11D-BC8C7C0C8DF7}" name="posix">
+          <FILE id="LgDDU8" name="NetworkingUtils.cpp" compile="1" resource="0"
+                file="Source/ip/posix/NetworkingUtils.cpp"/>
+          <FILE id="i19ALc" name="UdpSocket.cpp" compile="1" resource="0" file="Source/ip/posix/UdpSocket.cpp"/>
+        </GROUP>
+        <FILE id="S0L2n3" name="TimerListener.h" compile="0" resource="0" file="Source/ip/TimerListener.h"/>
+        <FILE id="bbuC73" name="UdpSocket.h" compile="0" resource="0" file="Source/ip/UdpSocket.h"/>
+        <GROUP id="{3F632D31-FF10-4E88-3E0A-577942D2825D}" name="win32"/>
+      </GROUP>
+      <FILE id="DE6uE" name="AudioRecorder.cpp" compile="1" resource="0"
+            file="Source/AudioRecorder.cpp"/>
+      <FILE id="M8MuIv" name="AudioRecorder.h" compile="0" resource="0" file="Source/AudioRecorder.h"/>
+      <FILE id="nrJ0LU" name="AudioSetup.cpp" compile="1" resource="0" file="Source/AudioSetup.cpp"/>
+      <FILE id="vJmzeb" name="AudioSetup.h" compile="0" resource="0" file="Source/AudioSetup.h"/>
+      <FILE id="CO9Ctb" name="ComponentLayoutEditor.cpp" compile="1" resource="0"
+            file="Source/ComponentLayoutEditor.cpp"/>
+      <FILE id="ITydX0" name="ComponentLayoutEditor.h" compile="0" resource="0"
+            file="Source/ComponentLayoutEditor.h"/>
+      <FILE id="t2whY" name="CustomLookAndFeel.cpp" compile="1" resource="0"
+            file="Source/CustomLookAndFeel.cpp"/>
+      <FILE id="t6AbCV" name="CustomLookAndFeel.h" compile="0" resource="0"
+            file="Source/CustomLookAndFeel.h"/>
+      <FILE id="Jzxms4" name="GuiCommands.h" compile="0" resource="0" file="Source/GuiCommands.h"/>
+      <FILE id="F6uWDY" name="LiveAudioInputDisplayComp.cpp" compile="1"
+            resource="0" file="Source/LiveAudioInputDisplayComp.cpp"/>
+      <FILE id="aXHiCN" name="LiveAudioInputDisplayComp.h" compile="0" resource="0"
+            file="Source/LiveAudioInputDisplayComp.h"/>
+      <FILE id="DHbwGf" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="aClHgL" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="MCcrm0" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="DVhI31" name="MainGuiPanel.cpp" compile="1" resource="0"
+            file="Source/MainGuiPanel.cpp"/>
+      <FILE id="tE1dr8" name="MainGuiPanel.h" compile="0" resource="0" file="Source/MainGuiPanel.h"/>
+      <FILE id="pFPk5p" name="MainWindow.cpp" compile="1" resource="0" file="Source/MainWindow.cpp"/>
+      <FILE id="zlUFd5" name="MainWindow.h" compile="0" resource="0" file="Source/MainWindow.h"/>
+      <FILE id="nYDp4Y" name="MidiRecorder.cpp" compile="1" resource="0"
+            file="Source/MidiRecorder.cpp"/>
+      <FILE id="eouOJm" name="MidiRecorder.h" compile="0" resource="0" file="Source/MidiRecorder.h"/>
+      <FILE id="ARc4dZ" name="Metronome.cpp" compile="1" resource="0" file="Source/Metronome.cpp"/>
+      <FILE id="JHkDPS" name="Metronome.h" compile="0" resource="0" file="Source/Metronome.h"/>
+      <FILE id="Jjtrj" name="MetronomeBeatCountListener.cpp" compile="1"
+            resource="0" file="Source/MetronomeBeatCountListener.cpp"/>
+      <FILE id="UH8t0T" name="MetronomeBeatCountListener.h" compile="0" resource="0"
+            file="Source/MetronomeBeatCountListener.h"/>
+      <FILE id="jYB9PG" name="OSCListener.cpp" compile="1" resource="0" file="Source/OSCListener.cpp"/>
+      <FILE id="TOszUb" name="OSCListener.h" compile="0" resource="0" file="Source/OSCListener.h"/>
+      <FILE id="KK5lZy" name="OSCMessageListener.cpp" compile="1" resource="0"
+            file="Source/OSCMessageListener.cpp"/>
+      <FILE id="f6ezEa" name="OSCMessageListener.h" compile="0" resource="0"
+            file="Source/OSCMessageListener.h"/>
+      <FILE id="bAsL55" name="OSCRecorder.cpp" compile="1" resource="0" file="Source/OSCRecorder.cpp"/>
+      <FILE id="wC4J7u" name="OSCRecorder.h" compile="0" resource="0" file="Source/OSCRecorder.h"/>
+      <FILE id="WAlBFz" name="OSCSetup.cpp" compile="1" resource="0" file="Source/OSCSetup.cpp"/>
+      <FILE id="CdXQ6o" name="OSCSetup.h" compile="0" resource="0" file="Source/OSCSetup.h"/>
+      <FILE id="XibLPj" name="PreferencesPane.cpp" compile="1" resource="0"
+            file="Source/PreferencesPane.cpp"/>
+      <FILE id="i5hTIg" name="PreferencesPane.h" compile="0" resource="0"
+            file="Source/PreferencesPane.h"/>
+      <FILE id="FXy4RR" name="Recorder.cpp" compile="1" resource="0" file="Source/Recorder.cpp"/>
+      <FILE id="gdZIsG" name="Recorder.h" compile="0" resource="0" file="Source/Recorder.h"/>
+      <FILE id="stsdv" name="RecOut.cpp" compile="1" resource="0" file="Source/RecOut.cpp"/>
+      <FILE id="CGDXq8" name="RecOut.h" compile="0" resource="0" file="Source/RecOut.h"/>
+      <FILE id="ZEzZd3" name="Serializable.cpp" compile="1" resource="0"
+            file="Source/Serializable.cpp"/>
+      <FILE id="jh5ow" name="Serializable.h" compile="0" resource="0" file="Source/Serializable.h"/>
+      <FILE id="xSo31k" name="SensorRecorder.cpp" compile="1" resource="0"
+            file="Source/SensorRecorder.cpp"/>
+      <FILE id="OYulpC" name="SensorRecorder.h" compile="0" resource="0"
+            file="Source/SensorRecorder.h"/>
+      <FILE id="mn5o7E" name="SerialInputSelectorComponentListBox.cpp" compile="1"
+            resource="0" file="Source/SerialInputSelectorComponentListBox.cpp"/>
+      <FILE id="d2nRPq" name="SerialInputSelectorComponentListBox.h" compile="0"
+            resource="0" file="Source/SerialInputSelectorComponentListBox.h"/>
+      <FILE id="LLCB0U" name="SerialSetup.cpp" compile="1" resource="0" file="Source/SerialSetup.cpp"/>
+      <FILE id="A7qnt" name="SerialSetup.h" compile="0" resource="0" file="Source/SerialSetup.h"/>
+      <FILE id="B4O2Yc" name="TextBoxSlider.h" compile="0" resource="0" file="Source/TextBoxSlider.h"/>
+      <FILE id="z2HfaB" name="TransportControl.cpp" compile="1" resource="0"
+            file="Source/TransportControl.cpp"/>
+      <FILE id="E1Iiyr" name="TransportControl.h" compile="0" resource="0"
+            file="Source/TransportControl.h"/>
+      <FILE id="oUWRyH" name="VUMeter.h" compile="0" resource="0" file="Source/VUMeter.h"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS/>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="1"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="1"/>
+  </MODULES>
+</JUCERPROJECT>

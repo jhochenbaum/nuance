@@ -1,0 +1,10 @@
+<2XACCEL_PROTOCOL>
+    <DATA>
+        <ITEM ID="L_AccelX" start="xL"/>
+        <ITEM ID="L_AccelY" start="yL"/>
+        <ITEM ID="L_AccelZ" start="zL"/>
+        <ITEM ID="R_AccelX" start="xR"/>
+        <ITEM ID="R_AccelY" start="yR"/>
+        <ITEM ID="R_AccelZ" start="zR"/>
+    </DATA>
+</2XACCEL_PROTOCOL>
